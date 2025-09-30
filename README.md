@@ -97,5 +97,5 @@ Analysis performed with pandas, NumPy, scikit-learn, matplotlib.
 ⚡ Next step for you:
 1. Paste this into your `README.md`.  
 2. Replace:
-   - `<your-vercel-app>` → your deployed Vercel link  
+   - `<your-vercel-app>` → https://students-performance-dashboard.vercel.app/  
    - `<TOP_SKILL=comprehension>` `<TOP_R=0.745>` `<MAE=5.22>`
