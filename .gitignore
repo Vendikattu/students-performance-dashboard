@@ -1,0 +1,17 @@
+# Node.js / Next.js
+node_modules
+.next
+out
+
+# Environment & logs
+.env
+*.log
+
+# OS junk
+.DS_Store
+
+# Jupyter Notebook cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial
+}
+
+.container {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px
+}
+
+.grid {
+    display: grid;
+    gap: 16px
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06)
+}
+
+.muted {
+    color: #6b7280
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}
+
+th {
+    cursor: pointer
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px
+}
