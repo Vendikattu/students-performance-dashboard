@@ -83,14 +83,20 @@ Hands-on
 
 Students with low engagement (<40 min) consistently scored lower (<60 points), suggesting targeted interventions can help.
 
-**Overview Stats & Correlations**  
-  ![Overview](./screenshots/overview.png)
+## 🖼️ Screenshots
 
-- **Scatter & Radar Charts**  
-  ![Charts](./screenshots/charts.png)
+- **Overview Stats**
+  
+  ![Overview](./snapshoots/overview.png)
 
-- **Student Table**  
-  ![Table](./screenshots/table.png)
+- **Scatter Plot (Attention vs Assessment)**
+
+  ![Scatter](./snapshoots/scatter.png)
+
+- **Student Table**
+
+  ![Table](./snapshoots/table.png)
+
 
 📌 Notes
 
