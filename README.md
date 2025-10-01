@@ -1,112 +1,95 @@
 # 🧠 Cognitive Skills & Student Performance Dashboard
 
-This project analyzes a **synthetic student dataset** and builds a dashboard to explore how cognitive skills (attention, comprehension, focus, retention, engagement) impact student performance. It combines **data analysis + ML in Jupyter Notebook** and an **interactive Next.js dashboard**.
+This project is an interactive dashboard and analysis pipeline that demonstrates how **cognitive skills** (comprehension, attention, focus, retention, engagement) influence **student performance**.  
+It uses a **synthetic dataset** and integrates **data analysis (Jupyter Notebook)** with a **Next.js dashboard** for visualization.
 
 ---
 
-## 📊 Dataset
-Synthetic dataset with the following columns:
+## 🚀 Features
 
-- `student_id`  
-- `name`  
-- `class`  
-- `comprehension`  
-- `attention`  
-- `focus`  
-- `retention`  
-- `engagement_time`  
-- `assessment_score`
+- 📊 **Overview Stats** – average scores & cognitive skill levels
+- 📈 **Charts** – Bar (skills vs score), Scatter (attention vs performance), Radar (individual student profile)
+- 🔍 **Searchable & Sortable Student Table** – filter by name/class, click row to inspect student
+- 🤖 **Machine Learning** – simple linear regression to predict `assessment_score`
+- 🧩 **Clustering** – students grouped into personas (`Analytical`, `Balanced`, `Hands-on`)
+- 💡 **Insights Panel** – automatically generated key findings
 
 ---
 
-## ✅ Tasks Completed
-- Used a synthetic dataset of student cognitive + performance metrics.  
-- Analyzed **correlations** between cognitive skills and assessment scores.  
-- Built a **Linear Regression model** to predict `assessment_score`.  
-- Clustered students into **learning personas** using K-Means.  
-- Developed a **Next.js dashboard** with:
-  - Overview stats (average scores, skills, engagement)
-  - **Bar chart** → skill vs score correlations
-  - **Scatter plot** → attention vs performance
-  - **Radar chart** → student profile
-  - **Searchable & sortable table** of students
-  - **Insights section** with key findings
+## 📂 Project Structure
+
+studentsPerformance(Dashboard)/
+│
+├─ components/ # React components (Stats, Charts, Table)
+├─ data/ # Synthetic CSV dataset
+├─ lib/ # Analytics utilities (linear regression, kmeans)
+├─ notebooks/ # Jupyter Notebook for analysis & ML
+├─ pages/ # Next.js pages (main dashboard)
+├─ public/data/ # JSON dataset for web app
+├─ snapshoots/ # 📸 Screenshots of the dashboard
+├─ styles/ # Global CSS
+├─ README.md
 
 ---
 
-## 📦 Deliverables
-- 📒 **Jupyter Notebook** → `notebooks/analysis.ipynb`  
-- 🖥️ **Next.js Dashboard** → `/pages`, `/components`, `/public/data/students.json`  
-- 💻 **GitHub Repo** → [students-performance-dashboard](https://github.com/Vendikattu/students-performance-dashboard)  
-- 🌍 **Live Demo (Vercel)** → https://students-performance-dashboard.vercel.app/
+## ⚙️ Installation & Setup
 
----
-
-## 🚀 Setup Instructions
-
-### 1. Clone the repo
-```bash
+### 1. Clone the repository
 git clone https://github.com/Vendikattu/students-performance-dashboard.git
 cd students-performance-dashboard
 
 2. Install dependencies
 npm install
 
-3. Run the development server
+3. Run locally
 npm run dev
+Visit http://localhost:3000.
 
+4. Jupyter Notebook (Analysis + ML)
+Make sure you have Python 3 & Jupyter installed:
 
-Now open http://localhost:3000
- in your browser.
-
-4. Build for production
-npm run build
-npm start
-
-5. Run the Jupyter Notebook
-python -m pip install -U notebook pandas numpy scikit-learn matplotlib
+pip install notebook pandas numpy scikit-learn matplotlib
 jupyter notebook notebooks/analysis.ipynb
 
-🔍 Key Findings
 
-Strongest driver of assessment score: <TOP_SKILL> (r = <TOP_R>)
+🖼️ Screenshots
 
-Model performance: Linear Regression achieved a Mean Absolute Error (MAE) of ~<MAE> points
+- *Overview Stats*  
+  [![Overview](./snapshoots/overview.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/overview.png)
 
-Personas identified:
+- *Scatter Plot (Attention vs Assessment)*  
+  [![Scatter](./snapshoots/scatter.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/scatter.png)
 
-Analytical
-
-Balanced
-
-Hands-on
-
-Students with low engagement (<40 min) consistently scored lower (<60 points), suggesting targeted interventions can help.
-
-## 🖼️ Screenshots
-
-- **Overview Stats**
-  
-  ![Overview](./snapshoots/overview.png)
-
-- **Scatter Plot (Attention vs Assessment)**
-
-  ![Scatter](./snapshoots/scatter.png)
-
-- **Student Table**
-
-  ![Table](./snapshoots/table.png)
+- *Student Table*  
+  [![Table](./snapshoots/table.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/table.png)
 
 
-📌 Notes
+📊 Deliverables
 
-This project uses a synthetic dataset — no real student data.
+✅ Jupyter Notebook (analysis + ML model)
 
-Dashboard built with Next.js + Chart.js.
+✅ Next.js dashboard (stats, charts, table, insights)
 
-Analysis performed with pandas, NumPy, scikit-learn, matplotlib.
+✅ GitHub repository (this project)
+
+✅ Deployed Vercel link (shareable)
+
+✅ README with setup instructions & findings
 
 
----
-   - `<Vendikattu-vercel-app>` → https://students-performance-dashboard.vercel.app/ 
-   - `<TOP_SKILL=comprehension>` `<TOP_R=0.745>` `<MAE=5.22>`
+🔮 Insights Example
+Strongest driver of performance = attention (highest correlation).
+
+ML model achieves low error (MAE) for predicting scores.
+
+Identified cluster of low-engagement, low-score students for potential interventions.
+
+🌐 Deployment
+This project is deployed on Vercel for live access.
+👉 Deployed Link (https://students-performance-dashboard.vercel.app/)
+
+📧 Author
+Vendikattu Naveen
+📩 vendikattunaveen@gmail.com
+🔗 https://github.com/Vendikattu
+
