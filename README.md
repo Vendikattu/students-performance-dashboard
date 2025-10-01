@@ -38,7 +38,7 @@ Synthetic dataset with the following columns:
 - 📒 **Jupyter Notebook** → `notebooks/analysis.ipynb`  
 - 🖥️ **Next.js Dashboard** → `/pages`, `/components`, `/public/data/students.json`  
 - 💻 **GitHub Repo** → [students-performance-dashboard](https://github.com/Vendikattu/students-performance-dashboard)  
-- 🌍 **Live Demo (Vercel)** → https://<your-vercel-app>.vercel.app  
+- 🌍 **Live Demo (Vercel)** → https://students-performance-dashboard.vercel.app/
 
 ---
 
@@ -83,6 +83,15 @@ Hands-on
 
 Students with low engagement (<40 min) consistently scored lower (<60 points), suggesting targeted interventions can help.
 
+**Overview Stats & Correlations**  
+  ![Overview](./screenshots/overview.png)
+
+- **Scatter & Radar Charts**  
+  ![Charts](./screenshots/charts.png)
+
+- **Student Table**  
+  ![Table](./screenshots/table.png)
+
 📌 Notes
 
 This project uses a synthetic dataset — no real student data.
@@ -93,9 +102,5 @@ Analysis performed with pandas, NumPy, scikit-learn, matplotlib.
 
 
 ---
-
-⚡ Next step for you:
-1. Paste this into your `README.md`.  
-2. Replace:
-   - `<your-vercel-app>` → https://students-performance-dashboard.vercel.app/  
+   - `<Vendikattu-vercel-app>` → https://students-performance-dashboard.vercel.app/ 
    - `<TOP_SKILL=comprehension>` `<TOP_R=0.745>` `<MAE=5.22>`
