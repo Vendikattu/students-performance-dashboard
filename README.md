@@ -57,8 +57,8 @@ jupyter notebook notebooks/analysis.ipynb
 - *Overview Stats*  
   [![Overview](./snapshoots/overview.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/overview.png)
 
-- *Scatter Plot (Attention vs Assessment)*  
-  [![Scatter](./snapshoots/scatter.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/scatter.png)
+- *RadarChart Plot (Attention vs Assessment)*  
+  [![RadarChart](./snapshoots/RadarChart.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/RadarChart.png)
 
 - *Student Table*  
   [![Table](./snapshoots/table.png)](https://raw.githubusercontent.com/Vendikattu/students-performance-dashboard/main/snapshoots/table.png)
